@@ -67,4 +67,4 @@ backend/
 ```
 
 ## Author
-- **GitHub:** [github.com/your-username](https://github.com/deyperfect)
+- **GitHub:** [github.com/deyperfect](https://github.com/deyperfect)
