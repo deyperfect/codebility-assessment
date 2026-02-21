@@ -28,6 +28,27 @@ https://documenter.getpostman.com/view/51751420/2sBXcEk1FV
 - Each todo is assigned a unique UUID on creation.
 - Input validation and error handling
 
+### Request Body
+- POST /api/todos requires `title` (string)
+- PUT /api/todos/:id requires `title` (string) and `completed` (boolean)
+
+### Response Structure
+- All todos contain `id`, `title`, `completed`, and `createdAt` fields
+- Create and update responses include a message and the todo object
+- Delete response returns a success message only
+
+### Error Responses & Status Codes
+- `200` - Success
+- `201` - Todo created successfully
+- `400` - Missing or invalid request body
+- `404` - Todo not found
+- `409` - Todo already exists
+
+### Validation Rules
+- `title` is required and cannot be empty
+- `completed` is required on update and must be a boolean
+- Duplicate todo titles are not allowed
+  
 ## Project Structure
 
 ```
@@ -45,4 +66,5 @@ backend/
 └── package.json
 ```
 
-
+## Author
+- **GitHub:** [github.com/your-username](https://github.com/deyperfect)
