@@ -24,6 +24,7 @@ https://documenter.getpostman.com/view/51751420/2sBXcEk1FV
 ## Details
 
 - Data is stored in memory using an array and will reset when the server restarts.
+- MVC-inspired folder structure
 - Each todo is assigned a unique UUID on creation.
 - Input validation and error handling
 
